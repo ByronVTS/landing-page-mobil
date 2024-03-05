@@ -53,6 +53,7 @@
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s;
     margin-top: 30px;
+    margin-bottom: 20px;
   }
   
   .header--title-container button:hover {
@@ -105,20 +106,24 @@
     align-items: center;
     justify-content: center;
     margin-top: 30px ;
+    padding-top: 40px;
+    border: #000000;
   }
   .inputBox {
     position: relative;
   }
-  
+  hr{
+    white-space: 80%;
+  }
   .inputBox input {
     padding: 15px 20px;
     outline: none;
     background: transparent;
     border-radius: 5px;
     /* color: #fff; */
-    border: 1px solid#ce6464;
+    border: 1px solid#000000;
     font-size: 1.2rem;
-    width: 300px;
+    width: 330px;
   }
   
   .inputBox span {
@@ -238,4 +243,44 @@
   
   .title {
     width: 990px;
+  }
+
+  /* ----------FOOTER------------- */
+  footer {
+    background: linear-gradient(to top, rgb(75, 85, 99), rgb(156, 163, 175), #ffff);
+    height: 150px;
+    display: flex;
+    width: 100%;
+    /* color: white; */
+  }
+
+  .footer-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  .footer-left ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .footer-left li{
+    margin: 1rem 0;
+  }
+  .footer-left a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.4rem;
+  }
+  .footer-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  .footer-right{
+    font-size: 4.8rem;
+    font-family: "Zen Tokyo Zoo", system-ui;
   }
